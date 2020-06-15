@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid, Cell} from 'react-mdl';
+import MyHelmet from './helmet';
 
 class LandingPage extends React.Component
 {
@@ -7,6 +8,7 @@ class LandingPage extends React.Component
     {
         return(
             <div style={{width: '100%', margin: 'auto'}}>
+                <MyHelmet title={"Home"}/>
                 <Grid className="landing-grid">
                     <Cell col={12}>
                         <img 

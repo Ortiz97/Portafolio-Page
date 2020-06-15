@@ -1,5 +1,6 @@
 import React from 'react';
 import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
+import MyHelmet from './helmet';
 
 class Projects extends React.Component
 {
@@ -34,6 +35,8 @@ class Projects extends React.Component
                         </CardMenu>
                     </Card>
                     
+                    
+                    
                     {/*Project #2 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '175px', background: 
@@ -51,7 +54,7 @@ class Projects extends React.Component
                             <IconButton name="share" />
                         </CardMenu>
                     </Card>
-
+                    
                     {/*Project #3 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '175px', background: 
@@ -200,6 +203,7 @@ class Projects extends React.Component
     {
         return(
             <div className="category-tabs">
+                <MyHelmet title={"Projects"}/>
                 <Tabs activeTab={this.state.activeTab} onChange={ (tabId) => this.setState({activeTab: tabId}) } ripple>
                     <Tab>React</Tab>
                     <Tab>Python</Tab>

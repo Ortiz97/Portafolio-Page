@@ -1,4 +1,5 @@
 import React from 'react';
+import MyHelmet from './helmet';
 
 class About extends React.Component
 {
@@ -6,6 +7,7 @@ class About extends React.Component
     {
         return(
             <div>
+                <MyHelmet title={"About Me"}/>
                 <h1>About Page</h1>
             </div>
         );
